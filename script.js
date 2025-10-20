@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     form.addEventListener('submit', function (e) {
         e.preventDefault();
         const formData = new FormData(form);
-        const scriptURL = https://script.google.com/macros/s/AKfycbw6ukHP1-vNQ9TSIantbHCjPQnLgsFmjk3VLwy3BAq9T34VBS0kycwJlrxcggksbTHNHQ/exec
+        const scriptURL =https://script.google.com/macros/s/AKfycbzgT0FkgxM9btIewasd-1fZ7UFDT5NH5wt6REIt-bXKzygBPs2YvNQW393d5EnA18ORYw/exec
 
         fetch(scriptURL, { method: 'POST', body: formData })
             .then(response => {
@@ -13,5 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
             .catch(error => console.error('Erro!', error.message));
     });
 });
+
 
 
