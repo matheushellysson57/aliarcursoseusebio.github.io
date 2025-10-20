@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     form.addEventListener('submit', function (e) {
         e.preventDefault();
         const formData = new FormData(form);
-        const scriptURL = 'COLOQUE_AQUI_A_URL_DO_SEU_SCRIPT_DO_GOOGLE_APPS'; // Substitua pela URL do seu script
+        const scriptURL = https://script.google.com/macros/s/AKfycbw6ukHP1-vNQ9TSIantbHCjPQnLgsFmjk3VLwy3BAq9T34VBS0kycwJlrxcggksbTHNHQ/exec; // Substitua pela URL do seu script
 
         fetch(scriptURL, { method: 'POST', body: formData })
             .then(response => {
@@ -13,3 +13,4 @@ document.addEventListener('DOMContentLoaded', function () {
             .catch(error => console.error('Erro!', error.message));
     });
 });
+
